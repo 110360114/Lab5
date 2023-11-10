@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btn = findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener(){
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
                 final AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
@@ -73,5 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,"你選擇是"+list[i],Toast.LENGTH_SHORT).show();
             }
         });
+        dialog_list.show();
     }
 }
